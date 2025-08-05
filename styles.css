@@ -1,0 +1,63 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: aqua;
+}
+
+header, aside, div, article, footer {
+border: 1px solid black;
+}
+header {
+    background-color: rgb(117, 143, 152);
+    height: 10vh;
+
+}
+
+aside{
+    display: inline-block;
+    width: 5vw;
+    height: 60vh
+    
+}
+.mid{
+    display: inline-block;
+    width: 88vw;
+    overflow: auto;
+}
+footer{
+    background-color: lightsalmon;
+    height: 10vw;
+}
+.mid{
+    height: 60vh;
+       background-color: rgb(42, 165, 81);
+}
+article{
+    height: 40vh;
+       background-color: brown;
+}
+.innermid{
+    height: 30vh;
+}
+
+aside:first-of-type {
+    background-color: lightgreen;
+    overflow:auto
+}
+
+aside:last-of-type {
+    background-color: lightblue;
+    overflow:auto
+}
+
+@media screen and (max-width: 600px){
+    aside{
+        width: 100vw;
+        height: 10vh;
+        display: block;
+    }
+    .mid{
+        width: 100vw;
+        display: block;
+    }
+}
